@@ -23,10 +23,27 @@ Things to reflect on:
   - How do clear variable names benefit team collaboration?
   
 */
-
-let a = "Alice";
+/*
+let a = "Alice"; // ambiguous variable name, does not indicate what it represents
 let b = 5;
 let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let d = a + " bought " + b + " items for $"+ c + ".";
 
 console.log(d);
+*/
+let custumerName = "Alice";
+let quantitiesPurchased = 5;
+let costOfQTYPurchased = 20;
+
+let purchasedItems = custumerName +"  bought " + quantitiesPurchased + " items for $" +costOfQTYPurchased +".";
+console.log(purchasedItems)
+
+// Additional variables to improve the program
+
+let pricePerItem = costOfQTYPurchased / quantitiesPurchased;
+let purchasedItem = "The cost of one item is $" + pricePerItem;
+
+console. log(purchasedItem)
+
+
+
